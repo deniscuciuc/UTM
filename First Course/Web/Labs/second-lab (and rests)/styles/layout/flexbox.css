@@ -6,26 +6,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: fixed;
   width: 100%;
-  height: 100px;
-  position: relative;
+  height: 65px;
 }
 
 .top-navbar div {
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.top-navbar__logo {
+  width: 5%;
+  margin-left: 3%;
+}
+
+.top-navbar__links {
+  width: 60%;
+  margin-left: 15%;
+  padding-left: 0.5rem;
 }
 
 .top-navbar__links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0.5em;
+}
+
+.top-navbar__links ul li {
+  padding-left: 10%;
 }
 
 .explore-japan-image {
   padding: 0;
   margin: 0;
-  position: absolute;
   width: 100%;
   height: 990px;
   background-repeat: no-repeat;
