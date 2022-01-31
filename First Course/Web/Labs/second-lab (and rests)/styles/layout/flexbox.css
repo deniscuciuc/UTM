@@ -1,0 +1,36 @@
+.top-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.top-navbar div {
+  padding: 1rem;
+}
+
+.top-navbar__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+}
+
+.explore-japan-image {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 990px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=flexbox.css.map */

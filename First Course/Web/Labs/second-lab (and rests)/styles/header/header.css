@@ -1,0 +1,25 @@
+.explore-japan-image {
+  background: url("../../content/img/main/Samurai-Woman-Meditating__main-image.png");
+}
+
+.top-navbar {
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 70px;
+}
+
+.top-navbar__links {
+  padding-left: 5rem;
+}
+
+.top-navbar__links ul li {
+  padding-left: 10em;
+  list-style-type: none;
+}
+
+.top-navbar__links ul li a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=header.css.map */
