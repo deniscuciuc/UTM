@@ -17,8 +17,8 @@
 }
 
 .top-navbar__links {
-    width: 60%;
-    margin-left: 15%;
+    width: 70%;
+    margin-left: 10%;
     padding-left: 0.5rem;
     ul {
         display: flex;
@@ -28,6 +28,24 @@
     ul li {
         padding-left: 10%;
     }
+}
+
+// DropDown Menu (links)
+.culture-dropdown__links {
+    display: flex;
+    display: none;
+    position: absolute;
+    min-width: 40%;
+    max-width: 100%;
+    padding: 5%;
+}
+
+.culture-dropdown {
+    height: 65px;
+}
+
+.culture-dropdown:hover .culture-dropdown__links {
+    display: block;
 }
 
 .explore-japan-image {

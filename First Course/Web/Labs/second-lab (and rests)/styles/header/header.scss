@@ -17,4 +17,15 @@
         color: rgb(255, 255, 255);
         text-decoration: none;
     }
+    ul li a:hover {
+        color: rgb(228, 78, 33);
+    }
+}
+
+.culture-dropdown__links {
+    margin-top: 17.1px;
+    background: rgba(0, 0, 0, 0.3);
+    a {
+        text-align: left;
+    }
 }
