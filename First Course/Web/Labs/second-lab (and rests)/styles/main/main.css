@@ -3,6 +3,7 @@
 @import url(../layout/grid.css);
 @import url(../header/header.css);
 @import url(../main-content/main-content.css);
+@import url(../map-content/map-content.css);
 @import url(../footer/footer.css);
 @import url(../components/button/button.css);
 @import url(../components/dropdown/dropdown.css);
