@@ -3,11 +3,14 @@
 #include <limits.h>
 #include <float.h>
 
+
+int count;
+
 #define LENGTH 10
 #define WIDTH 5
 #define NEWLINE '\n'
 
-static int count = 5; // here is global variable
+static int y = 10; // here is global variable
 
 int main() {
     // Represent how bytes hava any data type
@@ -17,6 +20,7 @@ int main() {
     // Standart operations with variables,constants and storage classes
     operationsWithVariables();
     operationsWithConstans();
+
 
     return 0;
 }
@@ -100,14 +104,12 @@ int operationsWithConstans() {
  *                  It should also be noted that defining 'register' does not mean that the variable will be stored in a register.
  *                  It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.
  *  - static
- *  - extern
+ *  - extern = > The extern storage class is used to give a reference of a global variable that is visible to ALL the program files. 
+ *               When you use 'extern', the variable cannot be initialized however, it points the variable name at a storage location that has been previously defined.
  * 
  * @return int 
  */
 int operationsWithStorageClasses() {
         int mounth;
-        auto int mounth;
         register int miles;
-        
-
 }
