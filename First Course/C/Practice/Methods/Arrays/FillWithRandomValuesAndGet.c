@@ -10,11 +10,9 @@ double getAverageNumberAndSumInOneDimensionalArray(int *array, int size);
 
 
 int main() {
-    
-    // getRandomValuesInOneDimensionalArray
     static int array[10];
     getRandomValuesInOneDimensionalArray(array);
-    
+    printf("%d", getAverageNumberAndSumInOneDimensionalArray(array, 10));
 
 
     return 0;
