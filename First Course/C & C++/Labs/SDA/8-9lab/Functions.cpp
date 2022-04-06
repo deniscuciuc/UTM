@@ -3,38 +3,70 @@
 
 int i;
 
-void addInformationAboutCars(Car*& usersCars, int& numberOfCars) {
+// finds last node in list
+Car* getLastNode(Car* head) {
+	if (head == NULL) {
+		return NULL;
+	}
+	while (head->next) {
+		head = head->next;
+	}
+	return head;
+}
 
-	do {
-		printf("Enter the number of information about cars to create: ");
-		scanf_s("%d", &numberOfCars);
+// gets by user data for nodes
+void getInfo(Car* head) {
+	printf("Model: ");
+	scanf("%s", &head->model);
+	printf("Country: ");
+	scanf("%s", &head->country);
+	printf("Production Date: ");
+	scanf("%s", &head->productionDate);
+	printf("Engine Power: ");
+	scanf("%d", &head->enginePower);
+	printf("Price: ");
+	scanf("%f", &head->price);
+}
 
-		if (numberOfCars <= 0) {
-			printf("Number cant be negative or zero!\n");
-			printf("Please, try again.\n");
-		}
-	} while (numberOfCars <= 0);
+// adds new node to the end of list
+void pushBack(Car* head) {
+	Car* last = getLastNode(head);
+	Car* tmp = (Car*)malloc(sizeof(Car));
+	getInfo(tmp);
+	tmp->next = NULL;
+	last->next = tmp;
+}
 
-	usersCars = (Car*)malloc(numberOfCars * sizeof(Car));
 
-	printf("Enter features of the each car: \n");
+void takesNumberOfCars(Car* head, int& numberOfCars) {
+	if (head == NULL) {
+		printf("How many cars do you want to create: ");
+		scanf("%d", &numberOfCars);
+	}
+	else {
+		printf("You already created list of cars!\n");
+		printf("If you want to add more cars, go to step 7.\n");
+	}
+}
+
+void fillsInformationAboutAllCars(Car* head, int numberOfCars) {
+	
 	for (int i = 0; i < numberOfCars; i++) {
 		printf("Car #%d\n", i + 1);
 		printf("Model: ");
-		scanf("%s", &usersCars[i].model);
+		scanf("%s", &head[i].model);
 		printf("Country: ");
-		scanf("%s", &usersCars[i].country);
+		scanf("%s", &head[i].country);
 		printf("Production Date: ");
-		scanf("%s", &usersCars[i].productionDate);
+		scanf("%s", &head[i].productionDate);
 		printf("Engine Power: ");
-		scanf("%d", &usersCars[i].enginePower);
+		scanf("%d", &head[i].enginePower);
 		printf("Price: ");
-		scanf("%f", &usersCars[i].price);
-		usersCars[i].next = NULL;
+		scanf("%f", &head[i].price);
+		head[i].next = NULL;
 	}
-
-
 }
+
 
 void displayInformationAboutCars(Car* usersCars, int numberOfCars) {
 	if (usersCars == NULL) {
@@ -225,34 +257,4 @@ void editInformationOfCar(Car* usersCars, int numberOfCars) {
 	}
 }   
 
-void addNewCar(Car* usersCars, int& numberOfCars) {
-	int userChoise;
-	printf("\nAdding new car: \n");
-	printf("1. Insert new car at the beginning\n");
-	printf("2. Add to the end of lists\n");
-	printf("3. Insert new car at the middle\n");
-	printf("4. Exit from this menu.\n");
-	do {
-		printf("\n\n\nSelect option: \n");
-		scanf("%d", &userChoise);
 
-		switch (userChoise) {
-		case 1:
-			
-			break;
-		case 2:
-			
-			break;
-		case 3:
-			
-			break;
-		case 4:
-			
-			break;
-		default:
-			printf("\nInvalid Input!");
-			printf("\nPlease,try again.");
-			break;
-		}
-	} while (userChoise != 4);
-}

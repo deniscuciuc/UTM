@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,kBAAkB;CAQlC;;AATD,AAEI,CAFH,CAEG,EAAE,CAAC,EAAE,CAAC;EACF,eAAe,EAAE,IAAI;CACxB;;AAJL,AAKI,CALH,CAKG,CAAC,CAAC;EACE,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACxB",
-    "sources": [
-        "custom-normalize.scss"
-    ],
-    "names": [],
-    "file": "custom-normalize.css"
-}

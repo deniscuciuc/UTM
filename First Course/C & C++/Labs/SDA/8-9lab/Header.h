@@ -18,7 +18,10 @@ typedef struct Car {
 	struct Car* next;
 } Car;
 
-struct Car* head;
+Car* getLastNode(Car* head);
+void getInfo(Car* head);
+void pushBack(Car* head);
+void takesNumberOfCars(Car* head, int& numberOfCars);
 
 void addInformationAboutCars(Car*& usersCars, int& numberOfCars);
 void displayInformationAboutCars(Car* usersCars, int numberOfCars);
@@ -34,6 +37,5 @@ void bubbleSortByAscendingEnginePower(Car* usersCars, int numberOfCars);
 void searchByCar(Car* usersCars, int numberOfCars);
 void editInformationOfCar(Car* usersCars, int numberOfCars);
 
-void addNewCar(Car* usersCars, int& numberOfCars);
-void insertNewCarAtBeginning(Car* usersCars, int& numberOfCars);
+
 
