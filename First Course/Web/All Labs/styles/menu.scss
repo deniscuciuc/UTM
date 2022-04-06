@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.labs {
+    padding-top: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1.25fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 2%;
+    row-gap: 50px;
+    .lab {
+        border: 1px solid black;
+        .lab_title {
+            text-align: center;
+        }
+        .lab_task {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        .lab_used-langs {
+            padding-top: 10px;
+            float: left;
+            font-size: 13px;
+            p {
+                color: grey;
+            }
+            p:hover {
+                color: black;
+            }
+        }
+        .lab_go-to-lab {
+            padding-top: 10px;
+            float: right;
+            font-size: 13px;
+            a {
+                color: grey;
+                text-decoration: none;
+            }
+            a:hover {
+                color: black;
+            }
+        }
+    }
+}

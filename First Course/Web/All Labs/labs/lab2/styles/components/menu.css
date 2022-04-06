@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left-side-menu {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  float: left;
+  border: 1px solid black;
+}
+
+.left-side-menu .menu_image img {
+  width: 100%;
+  height: auto;
+}
+
+.left-side-menu .content h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.left-side-menu .content .content-list {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.left-side-menu .content .content-list ul li {
+  padding-top: 3px;
+  list-style-type: none;
+}
+
+.left-side-menu .content .content-list ul li ul li {
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+.left-side-menu .content .content-list ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.left-side-menu .content .content-list ul li a:hover {
+  color: #790202;
+}
+
+.main-content {
+  padding-left: 25%;
+  padding-right: 5%;
+}
+
+.title {
+  text-align: left;
+  padding-top: 165px;
+}
+
+.title p {
+  font-style: italic;
+}
+
+.describtion {
+  padding-top: 50px;
+}
+
+.sith-vs-jedai {
+  padding-top: 25px;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.sith-vs-jedai img {
+  padding-left: 5%;
+  width: 40%;
+  height: auto;
+}
+
+.death-star {
+  padding-top: 25px;
+  padding-left: 15%;
+  padding-right: 7%;
+}
+
+.death-star img {
+  width: 75%;
+  height: auto;
+}
+/*# sourceMappingURL=menu.css.map */

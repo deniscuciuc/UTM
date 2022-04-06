@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.labs {
+  padding-top: 8%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1.25fr)[3];
+      grid-template-columns: repeat(3, 1.25fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  row-gap: 50px;
+}
+
+.labs .lab {
+  border: 1px solid black;
+}
+
+.labs .lab .lab_title {
+  text-align: center;
+}
+
+.labs .lab .lab_task {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.labs .lab .lab_used-langs {
+  padding-top: 10px;
+  float: left;
+  font-size: 13px;
+}
+
+.labs .lab .lab_used-langs p {
+  color: grey;
+}
+
+.labs .lab .lab_used-langs p:hover {
+  color: black;
+}
+
+.labs .lab .lab_go-to-lab {
+  padding-top: 10px;
+  float: right;
+  font-size: 13px;
+}
+
+.labs .lab .lab_go-to-lab a {
+  color: grey;
+  text-decoration: none;
+}
+
+.labs .lab .lab_go-to-lab a:hover {
+  color: black;
+}
+/*# sourceMappingURL=menu.css.map */

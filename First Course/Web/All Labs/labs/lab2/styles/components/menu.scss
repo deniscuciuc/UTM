@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left-side-menu {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: 1px solid black;
+    .menu_image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .content {
+        h3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .content-list {
+            font-size: 18px;
+            padding-top: 15px;
+            padding-left: 10px;
+            ul li {
+                padding-top: 3px;
+                list-style-type: none;
+                ul li {
+                    padding-top: 3px;
+                    padding-left: 10px;
+                }
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: rgb(121, 2, 2);
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    padding-left: 25%;
+    padding-right: 5%;
+}
+
+.title {
+    text-align: left;
+    padding-top: 165px;
+    p {
+        font-style: italic;
+    }
+}
+
+.describtion {
+    padding-top: 50px;
+}
+
+.sith-vs-jedai {
+    padding-top: 25px;
+    padding-left: 2%;
+    padding-right: 3%;
+    img {
+        padding-left: 5%;
+        width: 40%;
+        height: auto;
+    }
+}
+
+.death-star {
+    padding-top: 25px;
+    padding-left: 15%;
+    padding-right: 7%;
+    img {
+        width: 75%;
+        height: auto;
+    }
+}
