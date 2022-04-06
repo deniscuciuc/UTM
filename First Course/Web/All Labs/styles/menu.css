@@ -59,4 +59,9 @@
 .labs .lab .lab_go-to-lab a:hover {
   color: black;
 }
+
+.labs .lab:hover {
+  -webkit-box-shadow: 5px 5px #707070;
+          box-shadow: 5px 5px #707070;
+}
 /*# sourceMappingURL=menu.css.map */

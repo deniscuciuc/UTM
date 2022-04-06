@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .left-side-menu {
     position: fixed;
     width: 20%;
@@ -41,43 +45,18 @@
                 }
             }
         }
-    }
-}
-
-.main-content {
-    padding-left: 25%;
-    padding-right: 5%;
-}
-
-.title {
-    text-align: left;
-    padding-top: 165px;
-    p {
-        font-style: italic;
-    }
-}
-
-.describtion {
-    padding-top: 50px;
-}
-
-.sith-vs-jedai {
-    padding-top: 25px;
-    padding-left: 2%;
-    padding-right: 3%;
-    img {
-        padding-left: 5%;
-        width: 40%;
-        height: auto;
-    }
-}
-
-.death-star {
-    padding-top: 25px;
-    padding-left: 15%;
-    padding-right: 7%;
-    img {
-        width: 75%;
-        height: auto;
+        .back-to-global-menu {
+            padding-top: 55%;
+            font-size: 18px;
+            text-align: center;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgb(121, 2, 2);
+                text-decoration: underline;
+            }
+        }
     }
 }
