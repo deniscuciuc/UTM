@@ -1,0 +1,68 @@
+.main-content {
+  padding-left: 25%;
+  padding-right: 5%;
+}
+
+.title {
+  text-align: left;
+  padding-top: 165px;
+}
+
+.title p {
+  font-style: italic;
+}
+
+.describtion {
+  padding-top: 50px;
+}
+
+.sith-vs-jedai {
+  padding-top: 25px;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.sith-vs-jedai img {
+  padding-left: 5%;
+  width: 40%;
+  height: auto;
+}
+
+.death-star {
+  padding-top: 25px;
+  padding-left: 15%;
+  padding-right: 7%;
+}
+
+.death-star img {
+  width: 75%;
+  height: auto;
+}
+
+.new-empire {
+  padding-top: 25px;
+  padding-left: 15%;
+  padding-right: 7%;
+}
+
+.new-empire img {
+  width: 90%;
+  height: auto;
+}
+
+table tbody tr th a {
+  color: black;
+}
+
+table tbody tr th a:hover {
+  color: #790202;
+}
+
+table tbody tr td a {
+  color: black;
+}
+
+table tbody tr td a:hover {
+  color: #790202;
+}
+/*# sourceMappingURL=content.css.map */
