@@ -172,11 +172,11 @@
                 if (ele[i].type = "radio") {
                     if (ele[i].checked) {
                         if (ele[i].value === correctAnswers[indexOfCorrectAnswer]) {
-                            document.getElementById("result").innerHTML += j + ") " + ele[i].value + " is <u>Correct</u><br>";
+                            document.getElementById("result").innerHTML += j + ") " + ele[i].value + " is <u style='color:green'>Correct</u><br>";
                             mark++;
                             j++;
                         } else {
-                            document.getElementById("result").innerHTML += j + ") " + ele[i].value + " is <u>Wrong</u><br>";
+                            document.getElementById("result").innerHTML += j + ") " + ele[i].value + " is <u style='color:red'>Wrong</u><br>";
                             j++;
                         }
                     }
