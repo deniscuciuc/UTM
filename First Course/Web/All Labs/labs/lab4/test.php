@@ -17,7 +17,7 @@
         <div class="test__instruction">
             <p>Select the right word and type in the input field:</p>
         </div>
-        <form method="get" id="testJS" name="testJS" action="php/verifytest.php">
+        <form method="get" id="testJS" name="testJS">
             <div class="test__question">
                 <p>1. Please go to the store and pick up a <input type="text" id="question1" name="question[]" required minlength="2" maxlength="16" size="10"> of milk.</p>
                 <div class="answers">
@@ -124,7 +124,41 @@
 
 
 
-        <p class="results" id="results"></p>
+        <p class="results" id="results">
+        <?php
+$fd = fopen("testResults.txt", 'w') or die("не удалось создать файл");
+$correctAnswers = ["half gallon", "stick", "can", "bottle", "jar", "containers", "cup", "head", "pint", "a loaf"];
+$answers = [];
+$index = 0;
+$answerCounter = 1;
+$score = 0;
+if(isset($_GET["question"])){
+  
+    $answers = $_GET["question"];
+}
+
+echo "Вы ответили на  " . count($answers) . " вопрос/ов: <br>";
+foreach($answers as $answers) {
+    if(strcmp($answers,$correctAnswers[$index]) !== 0) {
+        echo "$answerCounter) answer is <u style='color:red'>Wrong</u> <br>";
+        fputs($fd, "$answerCounter) answer is Wrong
+        ");
+        $index++;
+        $answerCounter++;
+    } else {
+        echo "$answerCounter) answer is <u style='color:green'>Correct</u> <br>";
+        fputs($fd, "$answerCounter) answer is Correct
+        ");
+        $index++;
+        $score++;
+       $answerCounter++;
+    }
+};
+echo "Your score: $score";
+fputs($fd, "Your score: $score");
+fclose($fd);
+?>
+        </p>
 
         <div class="lab3-menu">
             <a href="../menu.html">« Вернуться к меню 3 лабораторной работы</a>
