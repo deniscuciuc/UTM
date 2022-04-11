@@ -46,11 +46,10 @@
     }
 }
 
-.control__reset {
+.test__control {
+    position: absolute;
     button {
-        margin-top: -10px;
-        margin-left: 25%;
-        position: absolute;
+        margin-left: 5%;
         width: 75px;
         height: 30px;
         font-size: 16px;
@@ -65,7 +64,7 @@ button:hover {
 }
 
 .results {
-    padding-top: 50px;
+    padding-top: 125px;
     text-align: center;
 }
 

@@ -1,0 +1,25 @@
+[Mon Apr 11 09:37:08.386262 2022] [mpm_winnt:notice] [pid 7844:tid 328] AH00455: Apache/2.4.53 (Win64) PHP/8.0.17 configured -- resuming normal operations
+[Mon Apr 11 09:37:08.386262 2022] [mpm_winnt:notice] [pid 7844:tid 328] AH00456: Apache Lounge VS16 Server built: Mar 16 2022 11:26:15
+[Mon Apr 11 09:37:08.386262 2022] [core:notice] [pid 7844:tid 328] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Mon Apr 11 09:37:08.401886 2022] [mpm_winnt:notice] [pid 7844:tid 328] AH00418: Parent: Created child process 10132
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 10132:tid 364] AH00354: Child: Starting 64 worker threads.
+[Mon Apr 11 09:42:41.223634 2022] [mpm_winnt:notice] [pid 7844:tid 328] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Apr 11 09:42:43.249323 2022] [mpm_winnt:notice] [pid 10132:tid 364] AH00364: Child: All worker threads have exited.
+[Mon Apr 11 09:42:43.264950 2022] [mpm_winnt:notice] [pid 7844:tid 328] AH00430: Parent: Child process 10132 exited successfully.
+[Mon Apr 11 09:45:36.558374 2022] [mpm_winnt:notice] [pid 6968:tid 332] AH00455: Apache/2.4.53 (Win64) PHP/8.0.17 configured -- resuming normal operations
+[Mon Apr 11 09:45:36.558374 2022] [mpm_winnt:notice] [pid 6968:tid 332] AH00456: Apache Lounge VS16 Server built: Mar 16 2022 11:26:15
+[Mon Apr 11 09:45:36.558374 2022] [core:notice] [pid 6968:tid 332] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Mon Apr 11 09:45:36.562880 2022] [mpm_winnt:notice] [pid 6968:tid 332] AH00418: Parent: Created child process 8704
+[Mon Apr 11 09:45:36.876607 2022] [mpm_winnt:notice] [pid 8704:tid 324] AH00354: Child: Starting 64 worker threads.
+[Mon Apr 11 10:06:32.914690 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:64896] PHP Warning:  Undefined variable $users in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:06:32.914690 2022] [php:error] [pid 8704:tid 1120] [client 127.0.0.1:64896] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\\localhost\\labs\\lab4\\php\\verifytest.php:11\nStack trace:\n#0 {main}\n  thrown in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:06:49.248757 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:64907] PHP Warning:  Undefined variable $users in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 12, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:06:49.248757 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:64907] PHP Warning:  foreach() argument must be of type array|object, null given in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 12, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:06:52.662347 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:64907] PHP Warning:  Undefined variable $users in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 12, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:06:52.662347 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:64907] PHP Warning:  foreach() argument must be of type array|object, null given in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 12, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:10:13.871006 2022] [php:error] [pid 8704:tid 1112] [client 127.0.0.1:65113] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\\localhost\\labs\\lab4\\php\\verifytest.php:11\nStack trace:\n#0 {main}\n  thrown in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:10:33.947012 2022] [php:error] [pid 8704:tid 1112] [client 127.0.0.1:65122] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\\localhost\\labs\\lab4\\php\\verifytest.php:11\nStack trace:\n#0 {main}\n  thrown in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:30:37.689759 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:50242] PHP Warning:  Undefined variable $index in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:30:37.689759 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:50242] PHP Warning:  Undefined array key "" in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 11, referer: http://localhost/labs/lab4/test.html
+[Mon Apr 11 10:30:37.689759 2022] [php:warn] [pid 8704:tid 1120] [client 127.0.0.1:50242] PHP Warning:  Undefined variable $index in C:\\localhost\\labs\\lab4\\php\\verifytest.php on line 13, referer: http://localhost/labs/lab4/test.html
