@@ -58,7 +58,7 @@
   background-color: #dfdfdf;
 }
 
-button {
+.control__reset button {
   margin-top: -10px;
   margin-left: 25%;
   position: absolute;

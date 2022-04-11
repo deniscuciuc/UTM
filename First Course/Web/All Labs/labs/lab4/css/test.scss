@@ -46,16 +46,18 @@
     }
 }
 
-button {
-    margin-top: -10px;
-    margin-left: 25%;
-    position: absolute;
-    width: 75px;
-    height: 30px;
-    font-size: 16px;
-    background-color: white;
-    border: 1px solid black;
-    cursor: pointer;
+.control__reset {
+    button {
+        margin-top: -10px;
+        margin-left: 25%;
+        position: absolute;
+        width: 75px;
+        height: 30px;
+        font-size: 16px;
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
 }
 
 button:hover {

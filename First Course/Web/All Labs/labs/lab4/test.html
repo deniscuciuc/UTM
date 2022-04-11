@@ -17,7 +17,7 @@
         <div class="test__instruction">
             <p>Select the right word and type in the input field:</p>
         </div>
-        <form id="testJS">
+        <form method="post" id="testJS" name="testJS" action="php/verifytest.php">
             <div class="test__question">
                 <p>1. Please go to the store and pick up a <input type="text" id="question1" name="question1" required minlength="2" maxlength="16" size="10"> of milk.</p>
                 <div class="answers">
@@ -112,6 +112,7 @@
                 <div class="control__reset">
                     <button type="reset" onclick="resetAnswers()">Reset</button>
                 </div>
+                <button type="submit">Submit</button>
             </div>
         </form>
 
