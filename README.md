@@ -1,1 +1,1 @@
-# utm-practice
+UTM labs and homeworks
